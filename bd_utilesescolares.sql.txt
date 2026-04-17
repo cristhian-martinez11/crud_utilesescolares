@@ -1,0 +1,19 @@
+create database bd_utilesescolares;
+use bd_utilesescolares;
+
+create table productos(
+id int auto_increment primary key not null,
+producto varchar (50),
+precioPorducto decimal (5,2),
+descripcionProducto varchar(100)
+);
+
+/*insert into productos (producto,precioPorducto,descripcionProducto) values (?,?,?);*/
+
+select * from productos;
+
+select productos.id, productos.producto, productos.precioPorducto, productos.descripcionProducto from productos;
+
+/*UPDATE productos SET productos.producto= ?,productos.precioPorducto=?,productos.descripcionProducto=? WHERE productos.id=?;*/
+
+/*DELETE FROM productos WHERE productos.id=?;*/
